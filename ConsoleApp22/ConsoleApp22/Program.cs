@@ -9,32 +9,15 @@ string tekdir = "tekededdir";
 string cutdur = "cutdur";
 for (int i = 0; i < numbers.Length;i++)
 {
-    if (numbers[i] % 2 == 0)
+if (numbers[i] % 2 == 0)
     {
-
-        cutededler +=numbers[i];
-
-
-
-    }
-
-
-
-    else
-    { 
-
-        tekededler += numbers[i];
-
-
-
-
-
-    }
-    
-
-
-
+    cutededler +=numbers[i];
 }
+else
+    { 
+tekededler += numbers[i];
+    }
+    }
 Console.WriteLine(tekededler);
 Console.WriteLine(cutededler);
 
@@ -51,26 +34,14 @@ int cutler = 0;
  
 for (int i = 0; i < ededler.Length; i++)
 {
-
-    if (ededler[i] % 2 == 0)
-        
-    {
-        cutler += ededler[i];
-
-        
-
-    }
-
-    else
-    {
-
-        tekler += ededler[i];
-
-       
-    }
-
-    
-
+if (ededler[i] % 2 == 0)
+        {
+ cutler += ededler[i];
+}
+else
+{
+tekler += ededler[i];
+}
 }
 int sum = tekler - cutler;
 
@@ -85,34 +56,18 @@ Console.WriteLine(sum);
 int[] reqemler = { 1, 2, 3, 4, 5, 6, 7, 8 };
 for (int i = 0; i < reqemler.Length; i++)
 {
-
-
-    int count = 0;
+int count = 0;
     for (int j = 0; j< reqemler.Length; j++)
     {
-
-
-        if(reqemler[j] == reqemler[i])
+if(reqemler[j] == reqemler[i])
         {
-
-
-            count++;
-
-        }
+ count++;
+}
         if( count == 1)
         {
-
-
-            Console.WriteLine(reqemler[i]);
-
-        }
-
-    }
-
-
-
-
-
+ Console.WriteLine(reqemler[i]);
+ }
+}
 }
 
 
